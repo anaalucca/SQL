@@ -3,6 +3,7 @@ USE clinica_vet;
 -- DB CLINICA VET
 
 -- TABELA CLIENTE
+
 INSERT INTO cliente (nome_cliente, endereco_cliente, telefone_cliente, email_cliente, cpf_cliente) VALUES	("Patricia Johnson", "Workhaven Lane 23", 11951009653, "patricia.johnson@gmail.com", 19574179113);
 INSERT INTO cliente (nome_cliente, endereco_cliente, telefone_cliente, email_cliente, cpf_cliente) VALUES	("Linda Williams", "Lillydale Drive 1411", 11924455222, "linda.williams@gmail.com", 12938923155);
 INSERT INTO cliente (nome_cliente, endereco_cliente, telefone_cliente, email_cliente, cpf_cliente) VALUES	("Barbara Jones", "Hanoi Way 1913", 11982181037, "barbara.jones@gmail.com", 44947611200);
@@ -198,7 +199,6 @@ INSERT INTO pagamento (valor_pagamento, id_cliente, id_paciente) VALUES	(0, 13, 
 INSERT INTO pagamento (valor_pagamento, id_cliente, id_paciente) VALUES	(0, 13, 15);
 INSERT INTO pagamento (valor_pagamento, id_cliente, id_paciente) VALUES	(70, 52, 63);
 INSERT INTO pagamento (valor_pagamento, id_cliente, id_paciente) VALUES	(100, 53, 64);
-
 
 -- TABELA MEDICO_VETERINARIO 
 
