@@ -347,7 +347,7 @@ INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vaci
 INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vacina, data_revacina) VALUES	(16, 2, "2022-10-10", "V4 e raiva", "350/22 e 508/22", "2023-10-10");
 INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vacina, data_revacina) VALUES	(18, 1, "2022-10-11", "V10 ", "320/22", "2022-11-11");
 INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vacina, data_revacina) VALUES	(21, 1, "2022-10-11", "V5 ", "123/22", "2022-11-11");
-INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vacina, data_revacina) VALUES	(22, 1, "2022-10-11", "V6", "123/22", "2022-11-11");
+INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vacina, data_revacina) VALUES	(22, 1, "2022-10-11", "V5", "123/22", "2022-11-11");
 INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vacina, data_revacina) VALUES	(23, 1, "2022-10-11", "V5 e raiva", "123/22 e 508/22", "2023-10-11");
 INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vacina, data_revacina) VALUES	(27, 2, "2022-10-11", "V8 e raiva", "245/22 e 508/22", "2023-10-11");
 INSERT INTO vacinacao (id_consulta, id_mv, data_consulta, tipo_vacina, lote_vacina, data_revacina) VALUES	(28, 2, "2022-10-11", "V4 e raiva", "350/22 e 508/22", "2023-10-11");
