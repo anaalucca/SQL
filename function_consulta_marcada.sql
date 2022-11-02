@@ -1,4 +1,4 @@
--- Retorna o total do faturamento da clínica até o momento no banco de dados = 5975
+-- Retorna 'tipo de consulta, nome paciente, nome cliente' de acordo com data, hora e medico veterinário da consulta
 
 CREATE FUNCTION `consulta_marcada` (data DATE, hora VARCHAR (5), id INT)
 RETURNS VARCHAR (100)
@@ -9,4 +9,4 @@ BEGIN
 	WHERE data_consulta = data and hora_consulta = hora and id_mv = id);
 END 
 
--- Exemplo SELECT faturamento();
+-- Exemplo SELECT consulta_marcada ('2022-10-10', '18:00', 2);
