@@ -31,3 +31,7 @@ END
 -- Ao inserir nome do cliente Patricia Johnson, retorna seu animal, a paciente Belinha e as suas informações 
 
 CALL cliente_paciente('Patricia Johnson');
+
+-- Se inserir nome vazio irá retornar nome de todas as colunas, porém nenhuma informação
+
+CALL cliente_paciente('');
