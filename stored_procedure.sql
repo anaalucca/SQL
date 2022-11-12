@@ -19,24 +19,15 @@ CALL consultas_vet (7);
 
 -----------------------------------------------------------------------------------------------------
 
--- Stored Procedure que retorna o histórico de consultas de acordo com o tipo de consulta
+-- Stored Procedure que retorna paciente que pertence ao cliente inserido
 
-CREATE PROCEDURE `historico_tipoConsulta` (IN tipo_consulta VARCHAR(30))
+CREATE PROCEDURE `cliente_paciente`(IN cliente VARCHAR(100))
 BEGIN
-	IF tipo_consulta IN ('dermatologia', 'clínica', 'ortopedia') THEN
-		(SELECT data_consulta, nome_mv, tipo_consulta, valor_pagamento
-		FROM consulta c JOIN medico_veterinario mv ON (c.id_mv = mv.id_mv)
-        JOIN pagamento p ON (c.id_pagamento = p.id_pagamento)
-		WHERE tipo_consulta = tipo_consulta);
-	ELSE
-		SELECT 'ERRO: TIPO DE CONSULTA NÃO REGISTRADO' AS msg;
-	END IF;
+	SELECT nome_cliente, nome_paciente, especie, raca, sexo, pelagem, nascimento_paciente, castrado, peso 
+	FROM paciente p JOIN cliente c ON (p.id_cliente = c.id_cliente) 
+	WHERE nome_cliente = cliente;
 END
 
-CALL historico_tipoConsulta('dermatologia');
+-- Ao inserir nome do cliente Patricia Johnson, retorna seu animal, a paciente Belinha e as suas informações 
 
-CALL historico_tipoConsulta('clínica');
-
-CALL historico_tipoConsulta('cardiologia');
-
--- Na última call retorna mensagem dizendo que este tipo de consulta nao foi registrado ainda
+CALL cliente_paciente('Patricia Johnson');
