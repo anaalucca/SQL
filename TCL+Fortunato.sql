@@ -1,3 +1,4 @@
+-- Banco de dados a ser utilizado 
 USE clinica_vet; 
 
 -- Primeira tabela a ser usada na transação é a tabela medico_veterinario fazendo a inserção de 2 novos registros 
